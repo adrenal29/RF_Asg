@@ -1,0 +1,19 @@
+* {
+  font-family: 'Switzer', sans-serif;
+}
+
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  /* width of the scrollbar */
+}
+
+.custom-scrollbar ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  /* background color of the track */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: black;
+  /* color of the scrollbar */
+}
