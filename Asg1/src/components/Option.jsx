@@ -23,7 +23,7 @@ const Option = ({actionName,btnText,done,active,statusHead,statusSubHead,btnText
         </div>
         <div className='mt-5 md:w-1/3 w-full flex  ml-auto'>
                 <div className="min-w-[100px]" onClick={()=>handleStatusChange(step)}>
-                <ActionButton text={done ? btnTextSuccess : btnText} />
+                <ActionButton text={done ? btnTextSuccess : btnText} done={done}/>
                  </div>
         </div>
     </div>
