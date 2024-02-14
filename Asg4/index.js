@@ -1,7 +1,7 @@
 const express=require('express')
 const app=express();
 
-
+const PORT=process.env.port || 3000;
 app.use((req,res,next)=>{
     const timestamp = new Date().toISOString();
     const { method, originalUrl } = req;
@@ -12,6 +12,6 @@ app.use((req,res,next)=>{
 app.get('/user',(req,res)=>{
     res.json("Hi from Mohuit")
 })
-app.listen('3000',(req,res)=>{
+app.listen(PORT,(req,res)=>{
     console.log("Server is started")
 })
