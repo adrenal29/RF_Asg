@@ -14,7 +14,7 @@ mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTop
 app.use(express.json());
 
 
-const userRoutes = require('./routes/userRoutes');
+const userRoutes = require('./Routes/userRoutes');
 app.use('/users', userRoutes);
 
 
