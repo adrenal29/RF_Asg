@@ -4,7 +4,7 @@ import Button from './Button'
 
 const Option = ({actionName,btnText,done,active,statusHead,statusSubHead,btnTextSuccess,step,handleStatusChange,dateComp}) => {
   return (
-    <div className={`border-b border-gray-500 p-5 ${active?"opactity:100":"opacity-30"}`}>
+    <div className={` p-5 ${active?"opactity:100":"opacity-30"}`}>
         <div className='flex '>
           <div className='relative'>
             <img src="./Check.svg" alt="Image loading" />
@@ -13,11 +13,11 @@ const Option = ({actionName,btnText,done,active,statusHead,statusSubHead,btnText
           <div className='flex justify-between w-full '>
             <div className='flex flex-col  ml-5'>
             <h1 className='text-xl' >{actionName}</h1>
-            {done &&(<h1 className='text-sm text-blue-300'>{statusSubHead}</h1>)}
+            {done &&(<h1 className='text-sm text-blue-300 mt-2'>{statusSubHead}</h1>)}
             {done && <h1 className='text-2xl font-bold text-buttonColor'>{statusHead}</h1>}
             </div>
             <div>
-            {done && <h1 className='text-lg ml-auto'>{dateComp}</h1>}
+            {done && <h1 className='text-lg ml-auto mr-10'>{dateComp}</h1>}
             </div>
           </div>
         </div>
