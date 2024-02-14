@@ -20,7 +20,7 @@
 #### Access locally on console messages
 `cd Asg 4`  
 `node index.js`
-### Check using Get request(may delay due to render reactivity): [https://asg4-middleware.onrender.com/](https://asg3-crud.onrender.com/users)
+### Check using Get request(may delay due to render reactivity): [https://asg4-middleware.onrender.com/](https://asg4-middleware.onrender.com/)
 
 ## Asg 5
 ### Access query using API: [https://asg3-crud.onrender.com/users/aggregate](https://asg3-crud.onrender.com/users/aggregate)
